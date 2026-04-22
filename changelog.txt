@@ -2,6 +2,7 @@
 Version: 2.0.0
 Date: ???
   Changes:
+    - Added Disco Science compatibility #75
     - Updated for Factorio 2.0 #98
     - Changed T3 labs to use Chemical plants instead of Solar panels #99
 ---------------------------------------------------------------------------------------------------

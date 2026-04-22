@@ -300,3 +300,10 @@ if settings.startup["sct-lab-modules"].value == "tier3" then
 elseif settings.startup["sct-lab-modules"].value == "tier4" then
   data.raw.lab["sct-lab-t4"].module_slots = 2
 end
+
+if DiscoScience then
+	DiscoScience.prepareLab(data.raw["lab"]["lab"])
+	DiscoScience.prepareLab(data.raw["lab"]["sct-lab-t2"])
+	DiscoScience.prepareLab(data.raw["lab"]["sct-lab-t3"])
+	DiscoScience.prepareLab(data.raw["lab"]["sct-lab-t4"])
+end
