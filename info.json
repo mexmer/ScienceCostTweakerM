@@ -1,6 +1,6 @@
 {
   "name": "ScienceCostTweakerM",
-  "version": "1.9.9",
+  "version": "2.0.0",
   "factorio_version":"2.0",
   "title": "ScienceCostTweaker Mod M",
   "author": "mexmer, KiwiHawk",
@@ -18,5 +18,5 @@
     "(?) bobgreenhouse"],
   "contact": "mexmer@github.com",
   "homepage": "https://github.com/mexmer/ScienceCostTweakerM",
-  "description": "Allows the cost of research to be tweaked, in terms of count, science packs and time. Original mod made by UberWafe, adopted for Factorio 0.18+"
+  "description": "Reworks the recipes for Science Packs, making them use a wider range of materials - where available.  Adds new labs that are required for the higher tier science packs.Also allows the cost of research to be tweaked via mod settings. Original mod made by UberWafe, adopted for Factorio 0.18+"
 }
