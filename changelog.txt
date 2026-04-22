@@ -1,8 +1,10 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.2.5
-Date: ???
+Version: 2.0.0
+Date: 22.04.2026
   Changes:
-    - Add always show made in, to all science packs #96(@dmeltzer)
+    - Added Disco Science compatibility #75
+    - Updated for Factorio 2.0 #98
+    - Changed T3 labs to use Chemical plants instead of Solar panels #99
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.4
 Date: 01.01.2024

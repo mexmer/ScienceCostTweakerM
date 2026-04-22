@@ -1,6 +1,6 @@
 if mods["bobtech"] then
   -- science groups
-  data:extend ({
+  data:extend({
     {
       type = "item-subgroup",
       name = "sct-advanced-logistic-science-pack",
@@ -16,14 +16,15 @@ if mods["bobtech"] then
       name = "sct-advanced-logistic-science-pack",
       icon = "__ScienceCostTweakerM__/graphics/bobmods/logistic-science-pack-128.png",
       icon_size = 128,
-      effects =
-      {
---[[      
+      essential = true,
+      effects = {
+        --[[      
         {
           type = "unlock-recipe",
           recipe = "advanced-logistic-science-pack",
         },
-]]--        
+]]
+        --
         {
           type = "unlock-recipe",
           recipe = "sct-logistic-cargo-unit",
@@ -41,35 +42,25 @@ if mods["bobtech"] then
           recipe = "sct-logistic-automated-storage",
         },
       },
-      prerequisites =
-      {
---        "chemical-science-pack"
+      prerequisites = {
+        --        "chemical-science-pack"
       },
-      unit =
-      {
+      unit = {
         count = 90,
-        ingredients = 
-        {
-          {"automation-science-pack", 1},
-          {"logistic-science-pack", 1},
-          {"chemical-science-pack", 1},
+        ingredients = {
+          { "automation-science-pack", 1 },
+          { "logistic-science-pack", 1 },
+          { "chemical-science-pack", 1 },
         },
         time = 30,
       },
       order = "sct-pack-d[logistic]",
     },
   })
-  if not mods["bobelectronics"] then
-    sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "circuit-network")
-  elseif mods["bobplates"] then 
-    sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "advanced-electronics-2")
-  else
-    sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "advanced-electronics-2")
-    sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "circuit-network")
-  end
+  sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "processing-unit")
 
   -- logistic pack items
-  data:extend ({
+  data:extend({
     {
       type = "item",
       name = "sct-logistic-cargo-unit",
@@ -108,7 +99,7 @@ if mods["bobtech"] then
       subgroup = "sct-advanced-logistic-science-pack",
       order = "h_a[logistic]-e[memory-unit]",
       stack_size = 200,
-    },  
+    },
   })
 
   -- logistic science pack
@@ -118,105 +109,35 @@ if mods["bobtech"] then
       name = "sct-advanced-logistic-science-pack",
       subgroup = "sct-advanced-logistic-science-pack",
       order = "h_a[logistic]",
-      --[[
-      expensive = 
-      {
-        enabled = false,
-        energy_required = 20,
-        ingredients = 
-        {
-          { type="item", name="sct-logistic-cargo-unit", amount=3 },
-          { type="item", name="sct-logistic-memory-unit", amount=2 },
-        },
-        results =
-        {
-          { type="item", name="advanced-logistic-science-pack", amount=2 },
-        },
+      enabled = false,
+      always_show_made_in = true,
+      allow_productivity = true,
+      energy_required = 14,
+      ingredients = {
+        { type = "item", name = "sct-logistic-cargo-unit", amount = 1 },
+        { type = "item", name = "sct-logistic-memory-unit", amount = 1 },
       },
-      ]]--
-      expensive = 
-      {
-        enabled = false,
-        always_show_made_in = true,
-        energy_required = 14,
-        ingredients = 
-        {
-          { type="item", name="sct-logistic-cargo-unit", amount=1 },
-          { type="item", name="sct-logistic-memory-unit", amount=1 },
-        },
-        results =
-        {
-          { type="item", name="advanced-logistic-science-pack", amount=2 },
-        },
+      results = {
+        { type = "item", name = "bob-advanced-logistic-science-pack", amount = 2 },
       },
-      normal = 
-      {
-        enabled = false,
-        always_show_made_in = true,
-        energy_required = 14,
-        ingredients = 
-        {
-          { type="item", name="sct-logistic-cargo-unit", amount=1 },
-          { type="item", name="sct-logistic-memory-unit", amount=1 },
-        },
-        results =
-        {
-          { type="item", name="advanced-logistic-science-pack", amount=2 },
-        },
-      },
-    }
+    },
   })
 
   -- logistic intermediate recipes
-  data:extend ({
+  data:extend({
     {
       type = "recipe",
       name = "sct-logistic-cargo-unit",
       subgroup = "sct-advanced-logistic-science-pack",
       order = "h_a[logistic]-b[cargo]",
-      --[[
-      expensive =
-      {
-        enabled = false,
-        energy_required = 7.5,
-        ingredients =
-        {
-          {"sct-logistic-unimover", 2},
-          {"sct-logistic-automated-storage", 3},
-        },
-        results = 
-        {
-          {type="item", name="sct-logistic-cargo-unit", amount=1},
-        },
+      enabled = false,
+      energy_required = 3,
+      ingredients = {
+        { type = "item", name = "sct-logistic-unimover", amount = 1 },
+        { type = "item", name = "sct-logistic-automated-storage", amount = 1 },
       },
-      ]]--
-      expensive =
-      {
-        enabled = false,
-        energy_required = 3,
-        ingredients =
-        {
-          {"sct-logistic-unimover", 1},
-          {"sct-logistic-automated-storage", 1},
-        },
-        results = 
-        {
-          {type="item", name="sct-logistic-cargo-unit", amount=1},
-        },
-      },
-      normal =
-      {
-        enabled = false,
-        energy_required = 3,
-        ingredients =
-        {
-          {"sct-logistic-unimover", 1},
-          {"sct-logistic-automated-storage", 1},
-        },
-        results = 
-        {
-          {type="item", name="sct-logistic-cargo-unit", amount=1},
-        },
+      results = {
+        { type = "item", name = "sct-logistic-cargo-unit", amount = 1 },
       },
     },
   })
@@ -228,86 +149,43 @@ if mods["bobtech"] then
         name = "sct-logistic-automated-storage",
         subgroup = "sct-advanced-logistic-science-pack",
         order = "h_a[logistic]-d[storage]",
-        expensive =
-        {
-          enabled = false,
-          energy_required = 4,
-          ingredients =
-          {
-            {"titanium-gear-wheel", 6},
-            {"cobalt-steel-bearing-ball", 6},
-            {"processing-unit", 2},
-            {"brass-alloy", 4},
-          },
-          results = 
-          {
-            {type="item", name="sct-logistic-automated-storage", amount=1},
-          },
+        enabled = false,
+        energy_required = 2,
+        ingredients = {
+          { type = "item", name = "bob-titanium-gear-wheel", amount = 3 },
+          { type = "item", name = "bob-cobalt-steel-bearing-ball", amount = 3 },
+          { type = "item", name = "processing-unit", amount = 1 },
+          { type = "item", name = "bob-brass-alloy", amount = 2 },
         },
-        normal =
-        {
-          enabled = false,
-          energy_required = 2,
-          ingredients =
-          {
-            {"titanium-gear-wheel", 3},
-            {"cobalt-steel-bearing-ball", 3},
-            {"processing-unit", 1},
-            {"brass-alloy", 2},
-          },
-          results = 
-          {
-            {type="item", name="sct-logistic-automated-storage", amount=1},
-          },
+        results = {
+          { type = "item", name = "sct-logistic-automated-storage", amount = 1 },
         },
-      },    
+      },
     })
 
-    data:extend({ 
+    data:extend({
       {
         type = "recipe",
         name = "sct-logistic-unimover",
         subgroup = "sct-advanced-logistic-science-pack",
         order = "h_a[logistic]-c[unimover]",
         category = "crafting-with-fluid",
-        expensive =
-        {
-          enabled = false,
-          energy_required = 4,
-          ingredients =
-          {
-            {"advanced-circuit", 8},
-            {"titanium-bearing-ball", 12},
-            {"cobalt-steel-gear-wheel", 12},
-            {"aluminium-plate",15},
-            {type="fluid", name="lubricant",amount=50}
-          },
-          results = 
-          {
-            {type="item", name="sct-logistic-unimover", amount=1},
-          },
+        enabled = false,
+        energy_required = 2,
+        ingredients = {
+          { type = "item", name = "advanced-circuit", amount = 4 },
+          { type = "item", name = "bob-titanium-bearing-ball", amount = 6 },
+          { type = "item", name = "bob-cobalt-steel-gear-wheel", amount = 6 },
+          { type = "item", name = "bob-aluminium-plate", amount = 8 },
+          { type = "fluid", name = "lubricant", amount = 20 },
         },
-        normal =
-        {
-          enabled = false,
-          energy_required = 2,
-          ingredients =
-          {
-            {"advanced-circuit", 4},
-            {"titanium-bearing-ball", 6},
-            {"cobalt-steel-gear-wheel", 6},
-            {"aluminium-plate",8},
-            {type="fluid", name="lubricant",amount=20}
-          },
-          results = 
-          {
-            {type="item", name="sct-logistic-unimover", amount=1},
-          },
+        results = {
+          { type = "item", name = "sct-logistic-unimover", amount = 1 },
         },
       },
     })
-    sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "cobalt-processing")
-    sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "titanium-processing")
+    sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "bob-cobalt-processing")
+    sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "bob-titanium-processing")
   else
     data:extend({
       {
@@ -315,70 +193,32 @@ if mods["bobtech"] then
         name = "sct-logistic-automated-storage",
         subgroup = "sct-advanced-logistic-science-pack",
         order = "h_a[logistic]-d[storage]",
-        expensive =
-        {
-          enabled = false,
-          energy_required = 4,
-          ingredients =
-          {
-            {"filter-inserter", 1},
-            {"steel-chest", 3},
-          },
-          results = 
-          {
-            {type="item", name="sct-logistic-automated-storage", amount=1},
-          },
+        enabled = false,
+        energy_required = 2,
+        ingredients = {
+          { type = "item", name = "fast-inserter", amount = 1 },
+          { type = "item", name = "steel-chest", amount = 2 },
         },
-        normal =
-        {
-          enabled = false,
-          energy_required = 2,
-          ingredients =
-          {
-            {"filter-inserter", 1},
-            {"steel-chest", 2},
-          },
-          results = 
-          {
-            {type="item", name="sct-logistic-automated-storage", amount=1},
-          },
+        results = {
+          { type = "item", name = "sct-logistic-automated-storage", amount = 1 },
         },
       },
     })
 
-    data:extend({ 
+    data:extend({
       {
         type = "recipe",
         name = "sct-logistic-unimover",
         subgroup = "sct-advanced-logistic-science-pack",
         order = "h_a[logistic]-c[unimover]",
-        expensive =
-        {
-          enabled = false,
-          energy_required = 4,
-          ingredients =
-          {
-            {"flying-robot-frame", 1},
-            {"express-transport-belt", 2},
-          },
-          results = 
-          {
-            {type="item", name="sct-logistic-unimover", amount=1},
-          },
+        enabled = false,
+        energy_required = 2,
+        ingredients = {
+          { type = "item", name = "flying-robot-frame", amount = 1 },
+          { type = "item", name = "express-transport-belt", amount = 2 },
         },
-        normal =
-        {
-          enabled = false,
-          energy_required = 2,
-          ingredients =
-          {
-            {"flying-robot-frame", 1},
-            {"express-transport-belt", 2},
-          },
-          results = 
-          {
-            {type="item", name="sct-logistic-unimover", amount=1},
-          },
+        results = {
+          { type = "item", name = "sct-logistic-unimover", amount = 1 },
         },
       },
     })
@@ -393,33 +233,14 @@ if mods["bobtech"] then
         name = "sct-logistic-memory-unit",
         subgroup = "sct-advanced-logistic-science-pack",
         order = "h_a[logistic]-e[memory-unit]",
-        expensive =
-        {
-          enabled = false,
-          energy_required = 4,
-          ingredients =
-          {
-            {"arithmetic-combinator", 2},
-            {"constant-combinator", 3},
-          },
-          results = 
-          {
-            {type="item", name="sct-logistic-memory-unit", amount=1},
-          },
+        enabled = false,
+        energy_required = 2,
+        ingredients = {
+          { type = "item", name = "arithmetic-combinator", amount = 1 },
+          { type = "item", name = "constant-combinator", amount = 2 },
         },
-        normal =
-        {
-          enabled = false,
-          energy_required = 2,
-          ingredients =
-          {
-            {"arithmetic-combinator", 1},
-            {"constant-combinator", 2},
-          },
-          results = 
-          {
-            {type="item", name="sct-logistic-memory-unit", amount=1},
-          },
+        results = {
+          { type = "item", name = "sct-logistic-memory-unit", amount = 1 },
         },
       },
     })
@@ -430,38 +251,19 @@ if mods["bobtech"] then
         name = "sct-logistic-memory-unit",
         subgroup = "sct-advanced-logistic-science-pack",
         order = "h_a[logistic]-e[memory-unit]",
-        expensive =
-        {
-          enabled = false,
-          energy_required = 4,
-          ingredients =
-          {
-            {"gilded-copper-cable", 6},
-            {"intergrated-electronics", 4},
-            {"solder", 4}
-          },
-          results = 
-          {
-            {type="item", name="sct-logistic-memory-unit", amount=1},
-          },
+        enabled = false,
+        energy_required = 2,
+        ingredients = {
+          { type = "item", name = "bob-gilded-copper-cable", amount = 3 },
+          { type = "item", name = "bob-integrated-electronics", amount = 2 },
+          { type = "item", name = "bob-solder", amount = 2 },
         },
-        normal =
-        {
-          enabled = false,
-          energy_required = 2,
-          ingredients =
-          {
-            {"gilded-copper-cable", 3},
-            {"intergrated-electronics", 2},
-            {"solder", 2}
-          },
-          results = 
-          {
-            {type="item", name="sct-logistic-memory-unit", amount=1},
-          },
+        results = {
+          { type = "item", name = "sct-logistic-memory-unit", amount = 1 },
         },
       },
     })
+    sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "bob-gold-processing")
   else
     data:extend({
       {
@@ -469,33 +271,14 @@ if mods["bobtech"] then
         name = "sct-logistic-memory-unit",
         subgroup = "sct-advanced-logistic-science-pack",
         order = "h_a[logistic]-e[memory-unit]",
-        expensive =
-        {
-          enabled = false,
-          energy_required = 4,
-          ingredients =
-          {
-            {"intergrated-electronics", 4},
-            {"constant-combinator", 3},
-          },
-          results = 
-          {
-            {type="item", name="sct-logistic-memory-unit", amount=1},
-          },
+        enabled = false,
+        energy_required = 2,
+        ingredients = {
+          { type = "item", name = "bob-integrated-electronics", amount = 4 },
+          { type = "item", name = "constant-combinator", amount = 2 },
         },
-        normal =
-        {
-          enabled = false,
-          energy_required = 2,
-          ingredients =
-          {
-            {"intergrated-electronics", 4},
-            {"constant-combinator", 2},
-          },
-          results = 
-          {
-            {type="item", name="sct-logistic-memory-unit", amount=1},
-          },
+        results = {
+          { type = "item", name = "sct-logistic-memory-unit", amount = 1 },
         },
       },
     })

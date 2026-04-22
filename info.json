@@ -1,21 +1,22 @@
 {
   "name": "ScienceCostTweakerM",
-  "version": "1.2.4",
-  "factorio_version":"1.1",
+  "version": "2.0.0",
+  "factorio_version":"2.0",
   "title": "ScienceCostTweaker Mod M",
-  "author": "mexmer, kingarthur, kiwihawk",
+  "author": "mexmer, KiwiHawk",
   "dependencies": [
-    "base >= 1.1.0",
+    "base",
     "? angelsbioprocessing",
     "? angelsrefining",
     "? angelssmelting",
-    "? omnimatter_science >= 3.0.3",
+    "? omnimatter_science",
     "? bobtech",
     "? bobplates",
     "? aai-industry",
     "? omnimatter_energy",
-    "(?) Bio_Industries"],
+    "? DiscoScience",
+    "(?) bobgreenhouse"],
   "contact": "mexmer@github.com",
   "homepage": "https://github.com/mexmer/ScienceCostTweakerM",
-  "description": "Allows the cost of research to be tweaked, in terms of count, science packs and time. Edit its configs costs *.lua to tweak the multipliers. - Original mod made by UberWafe, this is adopted 0.18+ version"
+  "description": "Reworks the recipes for Science Packs, making them use a wider range of materials - where available.  Adds new labs that are required for the higher tier science packs.Also allows the cost of research to be tweaked via mod settings. Original mod made by UberWafe, adopted for Factorio 0.18+"
 }

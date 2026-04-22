@@ -18,10 +18,6 @@ local function overwrite_setting(setting_type, setting_name, value)
   end
 end
 
-if mods["angelsindustries"] then
-  overwrite_setting("bool-setting", "angels-enable-tech", false)
-end
-
-if mods["WireShortcuts"] then
-  overwrite_setting("bool-setting", "wire-shortcuts-is-retain-wire-crafting", true)
+if mods["bobtech"] then
+  overwrite_setting("bool-setting", "bobmods-burnerphase", false)
 end

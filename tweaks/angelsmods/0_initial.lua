@@ -1,19 +1,32 @@
 require("science_angels")
+
+if mods["angelssmelting"] and not mods["bobplates"] then
+  angelsmods.trigger.ores["gold"] = true
+  angelsmods.trigger.ores["lead"] = true
+  angelsmods.trigger.ores["platinum"] = true
+  angelsmods.trigger.ores["tin"] = true
+
+  angelsmods.trigger.smelting_products["aluminium"].plate = true
+  angelsmods.trigger.smelting_products["cobalt"].plate = true
+  angelsmods.trigger.smelting_products["glass"].plate = true
+  angelsmods.trigger.smelting_products["gold"].plate = true
+  angelsmods.trigger.smelting_products["gold"].wire = true
+  angelsmods.trigger.smelting_products["lead"].plate = true
+  angelsmods.trigger.smelting_products["platinum"].plate = true
+  angelsmods.trigger.smelting_products["platinum"].wire = true
+  angelsmods.trigger.smelting_products["silver"].plate = true
+  angelsmods.trigger.smelting_products["silver"].wire = true
+  angelsmods.trigger.smelting_products["tin"].plate = true
+  angelsmods.trigger.smelting_products["tin"].wire = true
+  angelsmods.trigger.smelting_products["titanium"].plate = true
+end
+
 if mods["angelsbioprocessing"] then
   sctm.lab_input_add("sct-lab-t2", "sct-bio-science-pack")
   sctm.lab_input_add("sct-lab-t3", "sct-bio-science-pack")
   sctm.lab_input_add("sct-lab-t4", "sct-bio-science-pack")
 
-  angelsmods.triggers.paper = true
+  angelsmods.trigger.paper = true
   angelsmods.trigger.water_red_waste = true
-end
-
-if mods["angelsindustries"] and angelsmods.industries.components then
-  sctm.tech_dependency_add("angels-components-mechanical-1", "sct-automation-science-pack")
-  sctm.tech_dependency_add("angels-components-weapons-basic", "sct-automation-science-pack")
-  sctm.tech_dependency_add("angels-solder-smelting-basic", "sct-automation-science-pack")
-  sctm.tech_dependency_add("water-treatment", "sct-automation-science-pack")
-  -- Remove mixed waste processing as it will already have been unlocked with Military Science
-  sctm.tech_unlock_remove("sct-production-science-pack", "sct-waste-processing-mixed")
-  sctm.tech_unlock_remove("sct-utility-science-pack", "sct-waste-processing-mixed")
+  angelsmods.trigger.early_chemical_furnace = true
 end

@@ -9,7 +9,7 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-byproducts",
     order = "c[bp]-a[copperwaste]",
-    stack_size = 200
+    stack_size = 200,
   },
   {
     type = "item",
@@ -18,9 +18,9 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-byproducts",
     order = "c[bp]-b[mixedewaste]",
-    stack_size = 200
+    stack_size = 200,
   },
-  
+
   -- Tier 1 Intermediary products.
   -- =============================
   {
@@ -30,7 +30,7 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-sciencepack-1",
     order = "d[t1]-b[ironcore]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   {
@@ -40,7 +40,7 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-sciencepack-1",
     order = "d[t1]-c[magnet-coils]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   -- Tier 2 Intermediary products.
@@ -52,7 +52,7 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-sciencepack-2",
     order = "e[t2]-b[instruments]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   {
@@ -62,7 +62,7 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-sciencepack-2",
     order = "e[t2]-c[microcircuits]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   {
@@ -72,7 +72,7 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-sciencepack-2",
     order = "e[t2]-d[micro-wafer]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   {
@@ -82,7 +82,7 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-sciencepack-2",
     order = "e[t2]-e[wafer-stamp]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   {
@@ -92,9 +92,8 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-sciencepack-2",
     order = "e[t2]-f[reaction-nodes]",
-    stack_size = 200
+    stack_size = 200,
   },
-
 
   -- Tier 3 (optics) Intermediary products.
   -- =============================
@@ -105,7 +104,7 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-sciencepack-3",
     order = "f[t3]-b[femtolasers]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   {
@@ -115,7 +114,7 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-sciencepack-3",
     order = "f[t3]-c[flashfuel]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   {
@@ -125,7 +124,7 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-sciencepack-3",
     order = "f[t3]-d[laserfoci]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   {
@@ -135,7 +134,7 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-sciencepack-3",
     order = "f[t3]-e[laseremitter]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   {
@@ -145,7 +144,7 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-sciencepack-3",
     order = "f[t3]-f[atomicsensors]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   -- Military Intermediary products.
@@ -157,7 +156,7 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-sciencepack-mil",
     order = "g[mil]-b[plating]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   {
@@ -167,7 +166,7 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-sciencepack-mil",
     order = "g[mil]-c[subplating]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   {
@@ -177,7 +176,7 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-sciencepack-mil",
     order = "g[mil]-d[circuit3]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   {
@@ -187,7 +186,7 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-sciencepack-mil",
     order = "g[mil]-e[circuit2]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   {
@@ -197,19 +196,40 @@ data:extend({
     icon_size = 32,
     subgroup = "sct-sciencepack-mil",
     order = "g[mil]-f[circuit1]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   -- Production Intermediary products.
   -- =============================
   {
     type = "item",
+    name = "sct-cyan-wire",
+    icon_size = 64,
+    icon = "__ScienceCostTweakerM__/graphics/icons/cyan-wire.png",
+    subgroup = "sct-sciencepack-prod",
+    order = "h[prod]-b[cyan-wire]",
+    stack_size = 200,
+  },
+
+  -- =============================
+  {
+    type = "item",
+    name = "sct-magenta-wire",
+    icon_size = 64,
+    icon = "__ScienceCostTweakerM__/graphics/icons/magenta-wire.png",
+    subgroup = "sct-sciencepack-prod",
+    order = "h[prod]-c[cyan-wire]",
+    stack_size = 200,
+  },
+
+  {
+    type = "item",
     name = "sct-prod-bioprocessor",
     icon_size = 32,
     icon = "__ScienceCostTweakerM__/graphics/icons/sct-prod-bioprocessor.png",
     subgroup = "sct-sciencepack-prod",
-    order = "h[prod]-b[bioprocessor]",
-    stack_size = 200
+    order = "h[prod]-d[bioprocessor]",
+    stack_size = 200,
   },
 
   {
@@ -218,8 +238,8 @@ data:extend({
     icon_size = 32,
     icon = "__ScienceCostTweakerM__/graphics/icons/sct-prod-baked-biopaste.png",
     subgroup = "sct-sciencepack-prod",
-    order = "h[prod]-c[biopaste]",
-    stack_size = 200
+    order = "h[prod]-e[biopaste]",
+    stack_size = 200,
   },
 
   {
@@ -228,8 +248,8 @@ data:extend({
     icon_size = 32,
     icon = "__ScienceCostTweakerM__/graphics/icons/sct-prod-biosilicate.png",
     subgroup = "sct-sciencepack-prod",
-    order = "h[prod]-d[biosilicate]",
-    stack_size = 200
+    order = "h[prod]-f[biosilicate]",
+    stack_size = 200,
   },
 
   {
@@ -238,8 +258,8 @@ data:extend({
     icon_size = 32,
     icon = "__ScienceCostTweakerM__/graphics/icons/sct-prod-overclocker.png",
     subgroup = "sct-sciencepack-prod",
-    order = "h[prod]-e[overclocker]",
-    stack_size = 200
+    order = "h[prod]-g[overclocker]",
+    stack_size = 200,
   },
 
   {
@@ -248,13 +268,13 @@ data:extend({
     icon_size = 32,
     icon = "__ScienceCostTweakerM__/graphics/icons/sct-prod-chipcase.png",
     subgroup = "sct-sciencepack-prod",
-    order = "h[prod]-f[chipcase]",
-    stack_size = 200
+    order = "h[prod]-h[chipcase]",
+    stack_size = 200,
   },
 
-  -- High-Tech Intermediary products.
+  -- Utility Intermediary products.
   -- =============================
-  
+
   -- Energy Bank
   {
     type = "item",
@@ -263,9 +283,9 @@ data:extend({
     icon = "__ScienceCostTweakerM__/graphics/icons/sct-htech-capbank.png",
     subgroup = "sct-sciencepack-hightech",
     order = "i[ht]-b[capbank]",
-    stack_size = 200
+    stack_size = 200,
   },
-  
+
   -- Particle Injector
   {
     type = "item",
@@ -274,7 +294,7 @@ data:extend({
     icon = "__ScienceCostTweakerM__/graphics/icons/sct-htech-injector.png",
     subgroup = "sct-sciencepack-hightech",
     order = "i[ht]-c[injector]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   -- Mechanical Random Number Analyzer
@@ -285,7 +305,7 @@ data:extend({
     icon = "__ScienceCostTweakerM__/graphics/icons/sct-htech-random.png",
     subgroup = "sct-sciencepack-hightech",
     order = "i[ht]-d[random]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   -- Heated Thermal Store
@@ -296,7 +316,7 @@ data:extend({
     icon = "__ScienceCostTweakerM__/graphics/icons/sct-htech-thermalstore-heated.png",
     subgroup = "sct-sciencepack-hightech",
     order = "i[ht]-e[thermalstore-heated]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   -- Thermal Store
@@ -307,7 +327,7 @@ data:extend({
     icon = "__ScienceCostTweakerM__/graphics/icons/sct-htech-thermalstore.png",
     subgroup = "sct-sciencepack-hightech",
     order = "i[ht]-f[thermalstore]",
-    stack_size = 200
+    stack_size = 200,
   },
 
   --[[ all bellow was never used - might use it in future
@@ -398,7 +418,8 @@ data:extend({
     order = "f[bm4-part4d]",
     stack_size = 200
   },
-  ]]--
+  ]]
+  --
 
   -- Labs Intermediates
   -- =====================
@@ -470,15 +491,14 @@ data:extend({
   {
     type = "item",
     name = "sct-t3-sulfur-lightsource",
-    icons =
-    {
+    icons = {
       {
         icon_size = 64,
         icon = "__ScienceCostTweakerM__/graphics/icons/sct-t3-sulfur-lightsource-64.png",
       },
       {
-        icon_size = 64,
-        icon = "__ScienceCostTweakerM__/graphics/overlays/3-64.png",
+        icon_size = 32,
+        icon = "__ScienceCostTweakerM__/graphics/overlays/3.png",
       },
     },
     subgroup = "sct-labparts",

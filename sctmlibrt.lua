@@ -2,7 +2,6 @@
 
 local sctmlibrt = {}
 
-
 -- Enable the recipe with name ``recipe_name``.  If no recipe with such a name
 -- exists nothing is done.
 --
@@ -13,6 +12,5 @@ function sctmlibrt.enable_recipe(recipes, recipe_name)
     recipes[recipe_name].enabled = true
   end
 end
-
 
 return sctmlibrt

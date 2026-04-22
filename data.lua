@@ -1,8 +1,5 @@
 --INITIALIZE
-if not SCTTweaks then SCTTweaks = {} end
-
 require("sctmlib")
-
 require("config")
 
 -- Prototypes
