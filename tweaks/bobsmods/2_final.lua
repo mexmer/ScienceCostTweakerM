@@ -11,6 +11,8 @@ if mods["bobtech"] then
   sctm.recipe_ingredient_remove("utility-science-pack", "bob-silver-zinc-battery")
   sctm.recipe_ingredient_remove("utility-science-pack", "processing-unit")
   sctm.recipe_ingredient_remove("utility-science-pack", "bob-titanium-bearing")
+
+  sctm.lab_input_add("bob-lab-2", "logistic-science-pack")
 end
 
 if mods["bobplates"] then
