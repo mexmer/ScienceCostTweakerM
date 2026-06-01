@@ -14,6 +14,7 @@ Date: ???
       - Made Automated storage use Titanium bearing balls instead of Cobalt steel bearing balls
       - Made Automated storage use Cobalt steel plates instead of Brass plates
       - Made Universal transport engine use Titanium gear wheel instead of Cobalt steel gear wheel
+    - Made Cycan and Magenta wire use Paper instead of Electronic circuit (with Angel's Bioprocessing) #103
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.1
 Date: 29.04.2026
