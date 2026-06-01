@@ -144,7 +144,7 @@ if mods["bobplates"] then
       "copper-plate",
       { type = "item", name = "bob-brass-alloy", amount = 0 }
     )
-    sctm.tech_dependency_add("sct-military-science-pack", "angels-invar-smelting-1")    
+    sctm.tech_dependency_add("sct-military-science-pack", "angels-invar-smelting-1")
     sctm.tech_dependency_add("sct-military-science-pack", "angels-brass-smelting-1")
   else
     -- Gunmetal and Cobalt Steel
@@ -281,7 +281,6 @@ if mods["bobplates"] then
   elseif mods["angelssmelting"] then
     sctm.recipe_ingredient_replace("sct-lab3-construction", "steel-plate", "bob-brass-alloy")
     sctm.tech_dependency_add("sct-lab-t3", "angels-brass-smelting-1")
-  
   else
     sctm.recipe_ingredient_replace("sct-lab3-construction", "steel-plate", "bob-cobalt-steel-alloy")
     sctm.tech_dependency_add("sct-lab-t3", "bob-cobalt-processing")
