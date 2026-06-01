@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.2
-Date: ???
+Date: 01.06.2026
   Changes:
     - Adjusted for Bob's 2.1 changes #102
       - Removed unnecessary prerequisites
