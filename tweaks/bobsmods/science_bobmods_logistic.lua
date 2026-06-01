@@ -152,10 +152,10 @@ if mods["bobtech"] then
         enabled = false,
         energy_required = 2,
         ingredients = {
-          { type = "item", name = "bob-titanium-gear-wheel", amount = 3 },
-          { type = "item", name = "bob-cobalt-steel-bearing-ball", amount = 3 },
+          { type = "item", name = "bob-titanium-gear-wheel", amount = 1 },
+          { type = "item", name = "bob-titanium-bearing-ball", amount = 3 },
           { type = "item", name = "processing-unit", amount = 1 },
-          { type = "item", name = "bob-brass-alloy", amount = 2 },
+          { type = "item", name = "bob-cobalt-steel-alloy", amount = 2 },
         },
         results = {
           { type = "item", name = "sct-logistic-automated-storage", amount = 1 },
@@ -175,7 +175,7 @@ if mods["bobtech"] then
         ingredients = {
           { type = "item", name = "advanced-circuit", amount = 4 },
           { type = "item", name = "bob-titanium-bearing-ball", amount = 6 },
-          { type = "item", name = "bob-cobalt-steel-gear-wheel", amount = 6 },
+          { type = "item", name = "bob-titanium-gear-wheel", amount = 3 },
           { type = "item", name = "bob-aluminium-plate", amount = 8 },
           { type = "fluid", name = "lubricant", amount = 20 },
         },
