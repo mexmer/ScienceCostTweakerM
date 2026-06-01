@@ -190,7 +190,11 @@ if mods["bobplates"] then
   end
 
   if data.raw.item["bob-invar-alloy"] then
-    sctm.recipe_ingredient_replace("sct-prod-biosilicate", "steel-plate", { type = "item", name = "bob-invar-alloy", amount = 4 })
+    sctm.recipe_ingredient_replace(
+      "sct-prod-biosilicate",
+      "steel-plate",
+      { type = "item", name = "bob-invar-alloy", amount = 4 }
+    )
     if mods["angelssmelting"] then
       sctm.tech_dependency_add("sct-production-science-pack", "angels-invar-smelting-1")
     end
@@ -204,7 +208,11 @@ if mods["bobplates"] then
     and data.raw.item["bob-silicon-nitride"]
     and data.raw.item["bob-tungsten-gear-wheel"]
   then
-    sctm.recipe_ingredient_replace("sct-htech-capbank", "iron-plate", { type = "item", name = "bob-tungsten-gear-wheel", amount = 5 })
+    sctm.recipe_ingredient_replace(
+      "sct-htech-capbank",
+      "iron-plate",
+      { type = "item", name = "bob-tungsten-gear-wheel", amount = 5 }
+    )
     sctm.recipe_ingredient_replace("sct-htech-capbank", "battery", "bob-battery-2")
     sctm.recipe_ingredient_add("sct-htech-capbank", { type = "item", name = "bob-silicon-nitride", amount = 10 })
     sctm.tech_dependency_remove("sct-utility-science-pack", "battery")

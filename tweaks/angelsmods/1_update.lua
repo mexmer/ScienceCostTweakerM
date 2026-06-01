@@ -151,7 +151,15 @@ if mods["angelsbioprocessing"] then
   sctm.tech_dependency_add("angels-bio-desert-farming", "sct-bio-science-pack")
   sctm.lab_input_add("bob-lab-2", "sct-bio-science-pack")
 
-  sctm.recipe_ingredient_replace("sct-cyan-wire", "electronic-circuit", { type = "item", name = "angels-solid-paper", amount = 2 })
-  sctm.recipe_ingredient_replace("sct-magenta-wire", "electronic-circuit", { type = "item", name = "angels-solid-paper", amount = 2 })
+  sctm.recipe_ingredient_replace(
+    "sct-cyan-wire",
+    "electronic-circuit",
+    { type = "item", name = "angels-solid-paper", amount = 2 }
+  )
+  sctm.recipe_ingredient_replace(
+    "sct-magenta-wire",
+    "electronic-circuit",
+    { type = "item", name = "angels-solid-paper", amount = 2 }
+  )
   sctm.tech_dependency_add("sct-production-science-pack", "angels-bio-paper-1")
 end
