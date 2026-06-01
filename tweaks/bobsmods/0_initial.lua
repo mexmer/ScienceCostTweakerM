@@ -11,6 +11,6 @@ if mods["bobplates"] then
       "stone",
       { type = "item", name = "bob-silicon-plate", amount = 2 }
     )
-    sctm.tech_dependency_add("advanced-material-processing-2", "bob-silicon-processing")
+    sctm.tech_dependency_add("sct-production-science-pack", "bob-silicon-processing")
   end
 end

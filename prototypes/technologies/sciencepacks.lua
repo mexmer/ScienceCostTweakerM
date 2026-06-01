@@ -204,7 +204,7 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sct-magenta-wire",
       },
-      --[[      {
+      {
         type = "unlock-recipe",
         recipe = "sct-prod-biosilicate",
       },
@@ -212,8 +212,6 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sct-prod-baked-biopaste",
       },
-]]
-      --
       {
         type = "unlock-recipe",
         recipe = "sct-prod-bioprocessor",
@@ -233,7 +231,6 @@ data:extend({
     },
     prerequisites = {
       --      "chemical-science-pack",
-      "advanced-material-processing-2",
       "processing-unit",
       "advanced-oil-processing",
       --      "sct-lab-t4",
@@ -319,8 +316,6 @@ data:extend({
     prerequisites = {
       --      "sct-lab-s",
       "rocket-silo",
-      "electric-energy-accumulators",
-      "solar-energy",
     },
     unit = {
       count = 500,
@@ -337,6 +332,3 @@ data:extend({
     order = "sct-pack-f[ht]",
   },
 })
-
-sctm.tech_unlock_add("advanced-material-processing-2", "sct-prod-baked-biopaste")
-sctm.tech_unlock_add("advanced-material-processing-2", "sct-prod-biosilicate")

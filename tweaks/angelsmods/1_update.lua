@@ -23,7 +23,7 @@ if mods["angelspetrochem"] then
 
   -- Production Science Pack:
   -- =============================
-  sctm.tech_dependency_add("advanced-material-processing-2", "angels-gas-processing")
+  sctm.tech_dependency_add("sct-production-science-pack", "angels-gas-processing")
 
   -- Utility Science Pack:
   -- =============================

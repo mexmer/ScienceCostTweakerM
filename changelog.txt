@@ -1,4 +1,20 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.2
+Date: ???
+  Changes:
+    - Adjusted for Bob's 2.1 changes #102
+      - Removed unnecessary prerequisites
+      - Changed Bio-Silicate Extract to use Invar instead of Steel
+      - Updated Bob's item names
+      - Changed Capacitor bank to use Tungsten gear wheel instead of Steel gear wheel
+      - Reduced the number of Processing units used by Virtual Particle Injector
+      - Changed Heat driven mechanical random number analyzer to use Nitinol bearings instead of Titanium gear wheels and Titanium bearings
+      - Fixed Silicon wafer not being added to Combined memory cells
+      - Reduced the number of Gears used by science packs
+      - Made Automated storage use Titanium bearing balls instead of Cobalt steel bearing balls
+      - Made Automated storage use Cobalt steel plates instead of Brass plates
+      - Made Universal transport engine use Titanium gear wheel instead of Cobalt steel gear wheel
+---------------------------------------------------------------------------------------------------
 Version: 2.0.1
 Date: 29.04.2026
   Bugfixes:
@@ -261,7 +277,7 @@ Date: 13. 11. 2018
 Version: 0.16.47
 Date: 1. 8. 2018
   Changes:
-    - Removed unneccesary AAI basic logistic tech dependency, when bobs belt overhaul is present
+    - Removed unnecessary AAI basic logistic tech dependency, when bobs belt overhaul is present
 ---------------------------------------------------------------------------------------------------
 Version: 0.16.46
 Date: 28. 7. 2018
