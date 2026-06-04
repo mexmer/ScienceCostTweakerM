@@ -21,8 +21,10 @@ data.raw.tool["utility-science-pack"].order = "i[ht]-a[utility-science-pack]"
 data.raw.tool["space-science-pack"].subgroup = "sct-sciencepack-space"
 data.raw.tool["space-science-pack"].order = "z[space]-a[space-science-pack]"
 
-data.raw.item["satellite"].subgroup = "sct-sciencepack-space"
-data.raw.item["satellite"].order = "z[space]-b[satellite]"
+if data.raw.item["satellite"] then
+  data.raw.item["satellite"].subgroup = "sct-sciencepack-space"
+  data.raw.item["satellite"].order = "z[space]-b[satellite]"
+end
 
 -- icons
 data.raw.tool["automation-science-pack"].icons = {
