@@ -6,7 +6,7 @@ data:extend({
     type = "recipe",
     name = "sct-waste-processing-copper",
     localised_name = { "recipe-name.sct-waste-processing-copper" },
-    category = "advanced-crafting",
+    categories = { "advanced-crafting" },
     icon = "__ScienceCostTweakerM__/graphics/icons/sct-waste-copperonly.png",
     icon_size = 32,
     subgroup = "sct-byproducts",
@@ -25,7 +25,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-waste-processing-mixed",
-    category = "advanced-crafting",
+    categories = { "advanced-crafting" },
     icon = "__ScienceCostTweakerM__/graphics/icons/sct-waste-ironcopper.png",
     icon_size = 32,
     subgroup = "sct-byproducts",
@@ -176,7 +176,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-t3-femto-lasers",
-    category = "crafting-with-fluid",
+    categories = { "crafting-with-fluid" },
     subgroup = "sct-sciencepack-3",
     order = "f[t3]-b[femtolasers]",
     enabled = false,
@@ -195,7 +195,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-t3-flash-fuel",
-    category = "chemistry",
+    categories = { "chemistry" },
     always_show_made_in = true,
     subgroup = "sct-sciencepack-3",
     order = "f[t3]-c[flashfuel]",
@@ -250,7 +250,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-t3-atomic-sensors",
-    category = "crafting-with-fluid",
+    categories = { "crafting-with-fluid" },
     subgroup = "sct-sciencepack-3",
     order = "f[t3]-f[atomicsensors]",
     enabled = false,
@@ -273,7 +273,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-mil-plating",
-    category = "advanced-crafting",
+    categories = { "advanced-crafting" },
     subgroup = "sct-sciencepack-mil",
     order = "g[mil]-b[plating]",
     enabled = false,
@@ -312,7 +312,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-mil-circuit3",
-    category = "advanced-crafting",
+    categories = { "advanced-crafting" },
     subgroup = "sct-sciencepack-mil",
     order = "g[mil]-d[circuit3]",
     enabled = false,
@@ -371,7 +371,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-cyan-wire",
-    category = "crafting",
+    categories = { "crafting" },
     subgroup = "sct-sciencepack-prod",
     order = "h[prod]-b[cyan-wire]",
     enabled = false,
@@ -387,7 +387,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-magenta-wire",
-    category = "crafting",
+    categories = { "crafting" },
     subgroup = "sct-sciencepack-prod",
     order = "h[prod]-c[magenta-wire]",
     enabled = false,
@@ -403,7 +403,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-prod-bioprocessor",
-    category = "advanced-crafting",
+    categories = { "advanced-crafting" },
     subgroup = "sct-sciencepack-prod",
     order = "h[prod]-d[bioprocessor]",
     enabled = false,
@@ -423,7 +423,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-prod-baked-biopaste",
-    category = "smelting",
+    categories = { "smelting" },
     subgroup = "sct-sciencepack-prod",
     order = "h[prod]-e[biopaste]",
     always_show_made_in = true,
@@ -440,7 +440,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-prod-biosilicate",
-    category = "chemistry",
+    categories = { "chemistry" },
     subgroup = "sct-sciencepack-prod",
     order = "h[prod]-f[biosilicate]",
     always_show_made_in = true,
@@ -461,7 +461,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-prod-overclocker",
-    category = "crafting-with-fluid",
+    categories = { "crafting-with-fluid" },
     subgroup = "sct-sciencepack-prod",
     order = "h[prod]-g[overclocker]",
     enabled = false,
@@ -484,7 +484,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-prod-chipcase",
-    category = "crafting-with-fluid",
+    categories = { "crafting-with-fluid" },
     subgroup = "sct-sciencepack-prod",
     order = "h[prod]-h[chipcase]",
     enabled = false,
@@ -508,7 +508,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-htech-capbank",
-    category = "advanced-crafting",
+    categories = { "advanced-crafting" },
     subgroup = "sct-sciencepack-hightech",
     order = "i[ht]-b[capbank]",
     enabled = false,
@@ -528,7 +528,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-htech-injector",
-    category = "advanced-crafting",
+    categories = { "advanced-crafting" },
     subgroup = "sct-sciencepack-hightech",
     order = "i[ht]-c[injector]",
     enabled = false,
@@ -549,7 +549,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-htech-random",
-    category = "advanced-crafting",
+    categories = { "advanced-crafting" },
     subgroup = "sct-sciencepack-hightech",
     order = "i[ht]-d[random]",
     enabled = false,
@@ -566,7 +566,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-htech-thermalstore-heated",
-    category = "smelting",
+    categories = { "smelting" },
     subgroup = "sct-sciencepack-hightech",
     order = "i[ht]-e[thermalstore-heated]",
     energy_required = 10.5,
@@ -583,7 +583,7 @@ data:extend({
   {
     type = "recipe",
     name = "sct-htech-thermalstore",
-    category = "advanced-crafting",
+    categories = { "advanced-crafting" },
     subgroup = "sct-sciencepack-hightech",
     order = "i[ht]-f[thermalstore]",
     enabled = false,

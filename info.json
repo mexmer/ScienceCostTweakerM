@@ -1,9 +1,9 @@
 {
   "name": "ScienceCostTweakerM",
-  "version": "2.0.3",
-  "factorio_version":"2.0",
+  "version": "2.1.3",
+  "factorio_version":"2.1",
   "title": "ScienceCostTweaker Mod M",
-  "author": "mexmer, KiwiHawk",
+  "author": "mexmer, KiwiHawk, wanne"
   "dependencies": [
     "base",
     "? angelsbioprocessing",
