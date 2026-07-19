@@ -31,33 +31,3 @@ function SCT_formulaMod(timeMult, prefix, postfix)
 
   return costAdjuster
 end
-
--- Research using Bobingabout's Mods Module components
-function SCT_newBobModules(
-  timeMult,
-  stepCountMult,
-  circuitMult,
-  caseMult,
-  speedMult,
-  effectivityMult,
-  productivityMult,
-  pollutionCleanMult,
-  pollutionCreateMult
-)
-  local costAdjuster = {
-    time = timeMult, -- How much the time of the research is multiplied by
-    stepCount = stepCountMult, -- How much the count (number of research steps) of the research is multiplied by
-    -- How much the number of science packs per research-step of the research is multiplied by
-    cost = {},
-  }
-
-  costAdjuster.cost["module-circuit-board"] = circuitMult -- Multiplier to Module Circuit Boards
-  costAdjuster.cost["module-case"] = caseMult -- Multiplier to Module Cases
-  costAdjuster.cost["speed-processor"] = speedMult -- Multiplier to Speed Processors
-  costAdjuster.cost["effectivity-processor"] = effectivityMult -- Multiplier to Effectivity Processors
-  costAdjuster.cost["productivity-processor"] = productivityMult -- Multiplier to Productivity Processors
-  costAdjuster.cost["pollution-clean-processor"] = pollutionCleanMult -- Multiplier to Pollution Cleaning Processors
-  costAdjuster.cost["pollution-create-processor"] = pollutionCreateMult -- Multiplier to Pollution Cleaning Processors
-
-  return costAdjuster
-end

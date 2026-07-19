@@ -71,13 +71,6 @@ if settings.startup["sct-difficulty-cost"].value ~= "noadjustment" then
             -- For each type of science pack, multiply its count per research step by the given multiplier
             local packname = pack[1]
             local ingredientCostCount = pack[2]
-            local simplepack = true
-            if pack.name then
-              simplepack = false
-              packname = pack.name
-              ingredientCostCount = pack.amount
-            end
-
             if multiplier.cost[packname] then
               local mult = 1
 
@@ -85,12 +78,8 @@ if settings.startup["sct-difficulty-cost"].value ~= "noadjustment" then
               ingredientCostCount = math.floor(ingredientCostCount * mult)
               ingredientCostCount = math.max(ingredientCostCount, 1)
 
-              if simplepack then
-                pack[2] = ingredientCostCount
-              else
-                pack.amount = ingredientCostCount
-              end
-              --sctm.log(tech.name .. " multiplier applied " .. " (mult: " .. mult .. ", pack: " .. packname .. ", simplepack: " .. (simplepack and 'true' or 'false') .. ")")
+              pack[2] = ingredientCostCount
+              --sctm.log(tech.name .. " multiplier applied " .. " (mult: " .. mult .. ", pack: " .. packname)
             end
           end
         end
