@@ -80,9 +80,6 @@ if mods["aai-industry"] then
       subgroup = "sct-science-pack-0",
       order = "d[t0]-a[pack]",
       stack_size = 200,
-      durability = 1,
-      durability_description_key = "description.science-pack-remaining-amount-key",
-      durability_description_value = "description.science-pack-remaining-amount-value",
     },
   })
 

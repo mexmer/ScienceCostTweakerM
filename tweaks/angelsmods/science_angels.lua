@@ -19,9 +19,6 @@ if mods["angelsbioprocessing"] then
       subgroup = "sct-bio-science-pack",
       order = "d_a[bio]",
       stack_size = 200,
-      durability = 1,
-      durability_description_key = "description.science-pack-remaining-amount-key",
-      durability_description_value = "description.science-pack-remaining-amount-value",
     },
 
     {
