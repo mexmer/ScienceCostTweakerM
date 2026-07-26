@@ -169,7 +169,7 @@ if mods["bobtech"] then
         name = "sct-logistic-unimover",
         subgroup = "sct-advanced-logistic-science-pack",
         order = "h_a[logistic]-c[unimover]",
-        category = "crafting-with-fluid",
+        categories = { "crafting-with-fluid" },
         enabled = false,
         energy_required = 2,
         ingredients = {

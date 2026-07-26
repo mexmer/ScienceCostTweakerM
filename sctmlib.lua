@@ -565,13 +565,15 @@ function sctm.hide_recipe(recipe_name)
   end
 end
 
-function sctm.add_additional_category(recipe_name, category_name)
+function sctm.add_recipe_category(recipe_name, category_name)
   if type(recipe_name) == "string" and type(category_name) == "string" then
     local recipe = data.raw.recipe[recipe_name]
     local category = data.raw["recipe-category"][category_name]
     if recipe and category then
-      recipe.additional_categories = recipe.additional_categories or {}
-      table.insert(recipe.additional_categories, category_name)
+      recipe.categories = recipe.categories or { "crafting" }
+      if not sctm.find_in_table(recipe.categories, category_name) then
+        table.insert(recipe.categories, category_name)
+      end
     end
   else
     log(debug.traceback())

@@ -16,27 +16,27 @@ if mods["bobelectronics"] or mods["boblogistics"] or mods["bobplates"] then
 end
 
 if data.raw["recipe-category"]["electronics"] then
-  sctm.add_additional_category("sct-t1-ironcore", "electronics")
-  sctm.add_additional_category("sct-t1-magnet-coils", "electronics")
-  sctm.add_additional_category("sct-t2-instruments", "electronics")
-  sctm.add_additional_category("sct-t2-microcircuits", "electronics")
-  sctm.add_additional_category("sct-t2-micro-wafer", "electronics")
-  sctm.add_additional_category("sct-t2-wafer-stamp", "electronics")
-  sctm.add_additional_category("sct-t2-reaction-nodes", "electronics")
-  sctm.add_additional_category("sct-mil-circuit1", "electronics")
-  sctm.add_additional_category("sct-mil-circuit2", "electronics")
-  sctm.add_additional_category("sct-mil-circuit3", "electronics")
-  sctm.add_additional_category("sct-cyan-wire", "electronics")
-  sctm.add_additional_category("sct-magenta-wire", "electronics")
-  sctm.add_additional_category("sct-prod-bioprocessor", "electronics")
+  sctm.add_recipe_category("sct-t1-ironcore", "electronics")
+  sctm.add_recipe_category("sct-t1-magnet-coils", "electronics")
+  sctm.add_recipe_category("sct-t2-instruments", "electronics")
+  sctm.add_recipe_category("sct-t2-microcircuits", "electronics")
+  sctm.add_recipe_category("sct-t2-micro-wafer", "electronics")
+  sctm.add_recipe_category("sct-t2-wafer-stamp", "electronics")
+  sctm.add_recipe_category("sct-t2-reaction-nodes", "electronics")
+  sctm.add_recipe_category("sct-mil-circuit1", "electronics")
+  sctm.add_recipe_category("sct-mil-circuit2", "electronics")
+  sctm.add_recipe_category("sct-mil-circuit3", "electronics")
+  sctm.add_recipe_category("sct-cyan-wire", "electronics")
+  sctm.add_recipe_category("sct-magenta-wire", "electronics")
+  sctm.add_recipe_category("sct-prod-bioprocessor", "electronics")
   if data.raw.recipe["sct-logistic-memory-unit"] then
-    sctm.add_additional_category("sct-logistic-memory-unit", "electronics")
+    sctm.add_recipe_category("sct-logistic-memory-unit", "electronics")
   end
 end
 
 if data.raw["recipe-category"]["electronics-with-fluid"] then
-  sctm.add_additional_category("sct-prod-overclocker", "electronics-with-fluid")
-  sctm.add_additional_category("sct-prod-chipcase", "electronics-with-fluid")
+  sctm.add_recipe_category("sct-prod-overclocker", "electronics-with-fluid")
+  sctm.add_recipe_category("sct-prod-chipcase", "electronics-with-fluid")
 end
 
 if mods["bobplates"] then

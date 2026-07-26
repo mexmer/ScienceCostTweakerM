@@ -58,7 +58,7 @@ if mods["omnimatter_science"] and mods["omnimatter_crystal"] then
       name = "sct-omni-pack-minerals",
       subgroup = "sct-omni-science-pack",
       order = "e_a[omni]-b[minerals]",
-      category = "crafting-with-fluid",
+      categories = { "crafting-with-fluid" },
       enabled = false,
       energy_required = 3,
       ingredients = {

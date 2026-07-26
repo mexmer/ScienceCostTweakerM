@@ -111,7 +111,7 @@ if mods["angelsbioprocessing"] then
       name = "sct-bio-sample-filling",
       subgroup = "sct-bio-science-pack",
       order = "d_a[bio]-d[filling]",
-      category = "angels-liquifying",
+      categories = { "angels-liquifying" },
       enabled = false,
       energy_required = 2,
       ingredients = {
