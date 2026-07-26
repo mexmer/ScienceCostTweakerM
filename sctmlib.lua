@@ -586,7 +586,7 @@ function sctm.patch_recycling_recipes(updated_recipes)
     for _, recipe_name in pairs(updated_recipes) do
       local recipe = data.raw.recipe[recipe_name]
       if recipe then
-        sctm.tech_unlock_remove("recycling", recipe_name.."-recycling")
+        sctm.tech_unlock_remove("recycling", recipe_name .. "-recycling")
         recycling.generate_recycling_recipe(recipe)
       end
     end
