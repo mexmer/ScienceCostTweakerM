@@ -1,7 +1,7 @@
 if mods["omnimatter_science"] and mods["omnimatter_crystal"] then
-  --	sctm.debug(serpent.block(data.raw.tool["omni-pack"]))
+  --	sctm.debug(serpent.block(data.raw.item["omni-pack"]))
   --	sctm.debug(serpent.block(data.raw.recipe["omni-pack"]))
-  if data.raw.tool["omni-pack"] and data.raw.recipe["omni-pack"] then
+  if data.raw.item["omni-pack"] and data.raw.recipe["omni-pack"] then
     -- remove omnipack from basic lab
     sctm.lab_input_remove("lab", "omni-pack")
     -- remove omnipack from aai burner lab
@@ -16,13 +16,13 @@ if mods["omnimatter_science"] and mods["omnimatter_crystal"] then
     -- add t3 lab dep on omnipack research (because it reuqires it)
     sctm.tech_dependency_add("sct-lab-t3", "omnipack-technology")
     -- omnipack icons
-    data.raw.tool["omni-pack"].icons = {
+    data.raw.item["omni-pack"].icons = {
       {
         icon_size = 64,
         icon = "__ScienceCostTweakerM__/graphics/omni/omni-pack-64.png",
       },
     }
-    data.raw.tool["omni-pack"].subgroup = "sct-omni-science-pack"
+    data.raw.item["omni-pack"].subgroup = "sct-omni-science-pack"
     data.raw.recipe["omni-pack"].subgroup = "sct-omni-science-pack"
 
     -- add crystalonics deps
@@ -53,8 +53,8 @@ if mods["omnimatter_energy"] then
   if data.raw.recipe["energy-science-pack"] then
     data.raw.recipe["energy-science-pack"].subgroup = "sct-science-pack-0"
   end
-  if data.raw.tool["energy-science-pack"] then
-    data.raw.tool["energy-science-pack"].subgroup = "sct-science-pack-0"
+  if data.raw.item["energy-science-pack"] then
+    data.raw.item["energy-science-pack"].subgroup = "sct-science-pack-0"
   end
 
   --Set SCTs subgroup for the omnitor lab
@@ -91,7 +91,7 @@ if mods["omnimatter_energy"] then
   end
 
   --Add omnis energy SP to SCT lab and automation SP techs
-  if data.raw.tool["energy-science-pack"] and not data.raw.tool["sct-science-pack-0"] then
+  if data.raw.item["energy-science-pack"] and not data.raw.item["sct-science-pack-0"] then
     local tech = data.raw.technology["automation-science-pack"]
     tech.research_trigger = nil
     tech.unit = {

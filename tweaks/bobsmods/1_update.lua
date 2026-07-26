@@ -412,7 +412,7 @@ if mods["bobtech"] then
     sctm.tech_pack_remove("bob-alien-research", "military-science-pack")
     sctm.tech_pack_remove("bob-alien-research", "chemical-science-pack")
   end
-  if data.raw.tool["bob-advanced-logistic-science-pack"] and data.raw.recipe["bob-advanced-logistic-science-pack"] then
+  if data.raw.item["bob-advanced-logistic-science-pack"] and data.raw.recipe["bob-advanced-logistic-science-pack"] then
     -- remove logistic pack from tier 1 lab
     sctm.lab_input_remove("lab", "bob-advanced-logistic-science-pack")
     sctm.lab_input_add("sct-lab-t3", "bob-advanced-logistic-science-pack")
@@ -421,34 +421,34 @@ if mods["bobtech"] then
       sctm.lab_input_add("bob-lab-2", "bob-advanced-logistic-science-pack")
     end
 
-    data.raw.tool["bob-advanced-logistic-science-pack"].subgroup = "sct-advanced-logistic-science-pack"
-    data.raw.tool["bob-advanced-logistic-science-pack"].order = "h_a[logistic]"
-    data.raw.tool["bob-advanced-logistic-science-pack"].icon_size = 64
-    data.raw.tool["bob-advanced-logistic-science-pack"].icon =
+    data.raw.item["bob-advanced-logistic-science-pack"].subgroup = "sct-advanced-logistic-science-pack"
+    data.raw.item["bob-advanced-logistic-science-pack"].order = "h_a[logistic]"
+    data.raw.item["bob-advanced-logistic-science-pack"].icon_size = 64
+    data.raw.item["bob-advanced-logistic-science-pack"].icon =
       "__ScienceCostTweakerM__/graphics/bobmods/logistic-science-pack-64.png"
     local logisticrecipe = data.raw.recipe["sct-advanced-logistic-science-pack"]
     data.raw.recipe["sct-advanced-logistic-science-pack"] = nil
     logisticrecipe.name = "bob-advanced-logistic-science-pack"
     data.raw.recipe["bob-advanced-logistic-science-pack"] = logisticrecipe
   end
-  if data.raw.tool["bob-science-pack-gold"] then
-    data.raw.tool["bob-science-pack-gold"].subgroup = "sct-alien-science-pack"
-    data.raw.tool["bob-science-pack-gold"].order = "0-gold-science-pack"
-    data.raw.tool["bob-science-pack-gold"].icon_size = 64
-    data.raw.tool["bob-science-pack-gold"].icon = "__ScienceCostTweakerM__/graphics/bobmods/gold-science-pack-64.png"
+  if data.raw.item["bob-science-pack-gold"] then
+    data.raw.item["bob-science-pack-gold"].subgroup = "sct-alien-science-pack"
+    data.raw.item["bob-science-pack-gold"].order = "0-gold-science-pack"
+    data.raw.item["bob-science-pack-gold"].icon_size = 64
+    data.raw.item["bob-science-pack-gold"].icon = "__ScienceCostTweakerM__/graphics/bobmods/gold-science-pack-64.png"
     data.raw.recipe["bob-science-pack-gold"].subgroup = "sct-alien-science-pack"
     data.raw.recipe["bob-science-pack-gold"].order = "0-gold-science-pack"
   end
-  if data.raw.tool["bob-alien-science-pack"] then
-    data.raw.tool["bob-alien-science-pack"].subgroup = "sct-alien-science-pack"
-    data.raw.tool["bob-alien-science-pack"].icon_size = 64
-    data.raw.tool["bob-alien-science-pack"].icon = "__ScienceCostTweakerM__/graphics/bobmods/alien-science-pack-64.png"
-    data.raw.tool["bob-alien-science-pack-blue"].subgroup = "sct-alien-science-pack"
-    data.raw.tool["bob-alien-science-pack-orange"].subgroup = "sct-alien-science-pack"
-    data.raw.tool["bob-alien-science-pack-purple"].subgroup = "sct-alien-science-pack"
-    data.raw.tool["bob-alien-science-pack-yellow"].subgroup = "sct-alien-science-pack"
-    data.raw.tool["bob-alien-science-pack-green"].subgroup = "sct-alien-science-pack"
-    data.raw.tool["bob-alien-science-pack-red"].subgroup = "sct-alien-science-pack"
+  if data.raw.item["bob-alien-science-pack"] then
+    data.raw.item["bob-alien-science-pack"].subgroup = "sct-alien-science-pack"
+    data.raw.item["bob-alien-science-pack"].icon_size = 64
+    data.raw.item["bob-alien-science-pack"].icon = "__ScienceCostTweakerM__/graphics/bobmods/alien-science-pack-64.png"
+    data.raw.item["bob-alien-science-pack-blue"].subgroup = "sct-alien-science-pack"
+    data.raw.item["bob-alien-science-pack-orange"].subgroup = "sct-alien-science-pack"
+    data.raw.item["bob-alien-science-pack-purple"].subgroup = "sct-alien-science-pack"
+    data.raw.item["bob-alien-science-pack-yellow"].subgroup = "sct-alien-science-pack"
+    data.raw.item["bob-alien-science-pack-green"].subgroup = "sct-alien-science-pack"
+    data.raw.item["bob-alien-science-pack-red"].subgroup = "sct-alien-science-pack"
   end
 
   if data.raw.item["bob-brass-chest"] then

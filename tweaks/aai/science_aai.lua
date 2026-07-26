@@ -69,7 +69,7 @@ if mods["aai-industry"] then
   -- science pack
   data:extend({
     {
-      type = "tool",
+      type = "item",
       name = "sct-science-pack-0",
       icons = {
         {

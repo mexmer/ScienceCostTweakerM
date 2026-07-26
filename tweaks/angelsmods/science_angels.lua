@@ -12,7 +12,7 @@ if mods["angelsbioprocessing"] then
   -- bio pack items
   data:extend({
     {
-      type = "tool",
+      type = "item",
       name = "sct-bio-science-pack",
       icon = "__ScienceCostTweakerM__/graphics/angelsmods/sct-bio-science-pack-64.png",
       icon_size = 64,

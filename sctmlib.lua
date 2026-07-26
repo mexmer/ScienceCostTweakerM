@@ -42,7 +42,7 @@ end
 
 function sctm.lab_input_add(labname, packname)
   local added = false
-  if data.raw.lab[labname] and data.raw.tool[packname] then
+  if data.raw.lab[labname] and data.raw.item[packname] then
     if not data.raw.lab[labname].inputs then
       data.raw.lab[labname].inputs = {}
     end
@@ -64,7 +64,7 @@ function sctm.lab_input_add(labname, packname)
   if not data.raw.lab[labname] then
     sctm.debug("attempting to modify nonexistent lab " .. labname)
   end
-  if not data.raw.tool[packname] then
+  if not data.raw.item[packname] then
     sctm.debug("attempting to insert nonexistent science pack " .. packname)
   end
   return added
@@ -213,7 +213,7 @@ end
 function sctm.tech_pack_add(techname, sciencepack)
   local added = false
   sctm.debug("add pack " .. sciencepack[1] .. " to " .. techname)
-  if data.raw.technology[techname] and data.raw.tool[sciencepack[1]] then
+  if data.raw.technology[techname] and data.raw.item[sciencepack[1]] then
     local tech = data.raw.technology[techname]
     if tech.unit then
       if not tech.unit.ingredients then
@@ -225,7 +225,7 @@ function sctm.tech_pack_add(techname, sciencepack)
   if not data.raw.technology[techname] then
     sctm.debug("attempting to update nonexistent technology " .. techname)
   end
-  if not data.raw.tool[sciencepack[1]] then
+  if not data.raw.item[sciencepack[1]] then
     sctm.debug("attempting to add nonexistent pack " .. sciencepack[1])
   end
   return added
@@ -251,7 +251,7 @@ end
 function sctm.tech_pack_replace(techname, oldpackname, newpackname)
   sctm.debug("replace pack " .. oldpackname .. " by " .. newpackname .. " in " .. techname)
   local replaced = false
-  if data.raw.technology[techname] and data.raw.tool[newpackname] then
+  if data.raw.technology[techname] and data.raw.item[newpackname] then
     local tech = data.raw.technology[techname]
     if tech.unit and tech.unit.ingredients then
       replaced = replacepack(tech.unit.ingredients, oldpackname, newpackname)
@@ -260,10 +260,10 @@ function sctm.tech_pack_replace(techname, oldpackname, newpackname)
   if not data.raw.technology[techname] then
     sctm.debug("attempting to update nonexistent technology " .. techname)
   end
-  if not data.raw.tool[oldpackname] then
+  if not data.raw.item[oldpackname] then
     sctm.debug("attempting to remove nonexistent pack " .. oldpackname)
   end
-  if not data.raw.tool[newpackname] then
+  if not data.raw.item[newpackname] then
     sctm.debug("attempting to insert nonexistent pack " .. newpackname)
   end
   return replaced
