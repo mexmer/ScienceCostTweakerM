@@ -131,4 +131,16 @@ if mods["omnimatter_energy"] then
   sctm.lab_input_add("sct-lab-t2", "energy-science-pack")
   sctm.lab_input_add("sct-lab-t3", "energy-science-pack")
   sctm.lab_input_add("sct-lab-t4", "energy-science-pack")
+
+  --Replace transport belt with omnis basic belt
+  --If bobs basic belt is present, replace basic bob transport belt with omni basic belt
+  if
+    mods["boblogistics"]
+    and settings.startup["bobmods-logistics-beltoverhaul"]
+    and settings.startup["bobmods-logistics-beltoverhaul"].value
+  then
+    sctm.recipe_ingredient_replace("sct-lab1-mechanization", "bob-basic-transport-belt", "basic-transport-belt")
+  else
+    sctm.recipe_ingredient_replace("sct-lab1-mechanization", "transport-belt", "basic-transport-belt")
+  end
 end
