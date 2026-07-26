@@ -11,6 +11,7 @@ require("tweaks.aai.2_final")
 require("tweaks.angelsmods.2_final")
 require("tweaks.bobsmods.2_final")
 require("tweaks.omnimatter.2_final")
+require("tweaks.recycling")
 
 -- Technology map fix
 require("prototypes.2_technology")

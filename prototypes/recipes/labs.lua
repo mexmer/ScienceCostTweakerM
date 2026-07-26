@@ -7,6 +7,7 @@ data:extend({
     subgroup = "sct-labs",
     order = "a[labs]-a[sct-lab-t1]",
     enabled = false,
+    auto_recycle = false,
     energy_required = 5,
     ingredients = {
       { type = "item", name = "sct-lab1-construction", amount = 2 },

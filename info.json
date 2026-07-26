@@ -15,7 +15,9 @@
     "? aai-industry",
     "? omnimatter_energy",
     "? DiscoScience",
-    "(?) bobgreenhouse"],
+    "(?) bobgreenhouse",
+    "(?) recycler"
+  ],
   "contact": "mexmer@github.com",
   "homepage": "https://github.com/mexmer/ScienceCostTweakerM",
   "description": "Reworks the recipes for Science Packs, making them use a wider range of materials - where available.  Adds new labs that are required for the higher tier science packs.Also allows the cost of research to be tweaked via mod settings. Original mod made by UberWafe, adopted for Factorio 0.18+"

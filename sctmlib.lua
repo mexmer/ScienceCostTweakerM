@@ -579,3 +579,16 @@ function sctm.add_recipe_category(recipe_name, category_name)
     log(debug.traceback())
   end
 end
+
+function sctm.patch_recycling_recipes(updated_recipes)
+  if mods["recycler"] then
+    local recycling = require("__recycler__/recycling")
+    for _, recipe_name in pairs(updated_recipes) do
+      local recipe = data.raw.recipe[recipe_name]
+      if recipe then
+        sctm.tech_unlock_remove("recycling", recipe_name.."-recycling")
+        recycling.generate_recycling_recipe(recipe)
+      end
+    end
+  end
+end

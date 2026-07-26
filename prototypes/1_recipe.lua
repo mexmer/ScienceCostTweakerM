@@ -1,6 +1,7 @@
 local sctlab = data.raw.recipe["sct-lab-t1"]
 data.raw.recipe["sct-lab-t1"] = nil
 sctlab.name = "lab"
+sctlab.auto_recycle = nil
 data.raw.recipe["lab"] = sctlab
 
 local sciencepack1 = data.raw.recipe["sct-automation-science-pack"]
