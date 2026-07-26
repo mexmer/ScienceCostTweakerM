@@ -67,11 +67,11 @@ data:extend({
       sound = {
         filename = "__base__/sound/lab.ogg",
         volume = 0.7,
-        modifiers = {volume_multiplier("main-menu", 2.2), volume_multiplier("tips-and-tricks", 0.8)},
+        modifiers = { volume_multiplier("main-menu", 2.2), volume_multiplier("tips-and-tricks", 0.8) },
         audible_distance_modifier = 0.7,
       },
       fade_in_ticks = 4,
-      fade_out_ticks = 20
+      fade_out_ticks = 20,
     },
     impact_category = "glass",
     open_sound = sounds.lab_open,
@@ -88,29 +88,31 @@ data:extend({
       "military-science-pack",
     },
     module_slots = 0,
-    icons_positioning =
-    {
-      {inventory_index = defines.inventory.lab_modules, shift = {0, 0.9}},
-      {inventory_index = defines.inventory.lab_input, shift = {0, 0}, max_icons_per_row = 4, separation_multiplier = 1/1.1}
-    },
-    water_reflection =
-    {
-      pictures =
+    icons_positioning = {
+      { inventory_index = defines.inventory.lab_modules, shift = { 0, 0.9 } },
       {
+        inventory_index = defines.inventory.lab_input,
+        shift = { 0, 0 },
+        max_icons_per_row = 4,
+        separation_multiplier = 1 / 1.1,
+      },
+    },
+    water_reflection = {
+      pictures = {
         filename = "__base__/graphics/entity/lab/lab-reflection.png",
         priority = "extra-high",
         width = 24,
         height = 24,
         shift = util.by_pixel(5, 40),
         variation_count = 1,
-        scale = 5
+        scale = 5,
       },
       rotate = false,
-      orientation_to_variation = false
+      orientation_to_variation = false,
     },
     circuit_wire_max_distance = lab_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["lab"],
-    default_technology_level_signal = {type = "virtual", name = "signal-L"},
+    default_technology_level_signal = { type = "virtual", name = "signal-L" },
     next_upgrade = "sct-lab-t3",
   },
   -- == Tier 3 ==
@@ -175,11 +177,11 @@ data:extend({
       sound = {
         filename = "__base__/sound/lab.ogg",
         volume = 0.7,
-        modifiers = {volume_multiplier("main-menu", 2.2), volume_multiplier("tips-and-tricks", 0.8)},
+        modifiers = { volume_multiplier("main-menu", 2.2), volume_multiplier("tips-and-tricks", 0.8) },
         audible_distance_modifier = 0.7,
       },
       fade_in_ticks = 4,
-      fade_out_ticks = 20
+      fade_out_ticks = 20,
     },
     impact_category = "glass",
     open_sound = sounds.lab_open,
@@ -198,29 +200,31 @@ data:extend({
       "production-science-pack",
     },
     module_slots = 0,
-    icons_positioning =
-    {
-      {inventory_index = defines.inventory.lab_modules, shift = {0, 0.9}},
-      {inventory_index = defines.inventory.lab_input, shift = {0, 0}, max_icons_per_row = 4, separation_multiplier = 1/1.1}
-    },
-    water_reflection =
-    {
-      pictures =
+    icons_positioning = {
+      { inventory_index = defines.inventory.lab_modules, shift = { 0, 0.9 } },
       {
+        inventory_index = defines.inventory.lab_input,
+        shift = { 0, 0 },
+        max_icons_per_row = 4,
+        separation_multiplier = 1 / 1.1,
+      },
+    },
+    water_reflection = {
+      pictures = {
         filename = "__base__/graphics/entity/lab/lab-reflection.png",
         priority = "extra-high",
         width = 24,
         height = 24,
         shift = util.by_pixel(5, 40),
         variation_count = 1,
-        scale = 5
+        scale = 5,
       },
       rotate = false,
-      orientation_to_variation = false
+      orientation_to_variation = false,
     },
     circuit_wire_max_distance = lab_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["lab"],
-    default_technology_level_signal = {type = "virtual", name = "signal-L"},
+    default_technology_level_signal = { type = "virtual", name = "signal-L" },
     next_upgrade = "sct-lab-t4",
   },
 
@@ -286,11 +290,11 @@ data:extend({
       sound = {
         filename = "__base__/sound/lab.ogg",
         volume = 0.7,
-        modifiers = {volume_multiplier("main-menu", 2.2), volume_multiplier("tips-and-tricks", 0.8)},
+        modifiers = { volume_multiplier("main-menu", 2.2), volume_multiplier("tips-and-tricks", 0.8) },
         audible_distance_modifier = 0.7,
       },
       fade_in_ticks = 4,
-      fade_out_ticks = 20
+      fade_out_ticks = 20,
     },
     impact_category = "glass",
     open_sound = sounds.lab_open,
@@ -311,29 +315,31 @@ data:extend({
       "space-science-pack",
     },
     module_slots = 0,
-    icons_positioning =
-    {
-      {inventory_index = defines.inventory.lab_modules, shift = {0, 0.9}},
-      {inventory_index = defines.inventory.lab_input, shift = {0, 0}, max_icons_per_row = 4, separation_multiplier = 1/1.1}
-    },
-    water_reflection =
-    {
-      pictures =
+    icons_positioning = {
+      { inventory_index = defines.inventory.lab_modules, shift = { 0, 0.9 } },
       {
+        inventory_index = defines.inventory.lab_input,
+        shift = { 0, 0 },
+        max_icons_per_row = 4,
+        separation_multiplier = 1 / 1.1,
+      },
+    },
+    water_reflection = {
+      pictures = {
         filename = "__base__/graphics/entity/lab/lab-reflection.png",
         priority = "extra-high",
         width = 24,
         height = 24,
         shift = util.by_pixel(5, 40),
         variation_count = 1,
-        scale = 5
+        scale = 5,
       },
       rotate = false,
-      orientation_to_variation = false
+      orientation_to_variation = false,
     },
     circuit_wire_max_distance = lab_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["lab"],
-    default_technology_level_signal = {type = "virtual", name = "signal-L"},
+    default_technology_level_signal = { type = "virtual", name = "signal-L" },
   },
 })
 
